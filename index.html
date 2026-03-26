@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osu! trainer v1.8.0 | 實戰突破指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: "Microsoft JhengHei", sans-serif; }
+        .osu-pink { color: #ff66aa; }
+        .bg-osu-pink { background-color: #ff66aa; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); }
+    </style>
+</head>
+<body class="hero-gradient min-h-screen">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter">OSU!<span class="osu-pink">TRAINER</span></div>
+        <div class="space-x-8 hidden md:flex">
+            <a href="#about" class="hover:text-pink-400 transition">關於工具</a>
+            <a href="#safety" class="text-red-400 hover:text-red-300 transition">避險必看</a>
+            <a href="#process" class="hover:text-pink-400 transition">實戰流程</a>
+        </div>
+        <a href="#" class="bg-osu-pink px-6 py-2 rounded-lg font-bold hover:brightness-110 transition">下載工具</a>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">卡在 PP 瓶頸上不去？</h1>
+        <p class="text-lg text-slate-400 mb-10">
+            別再死練了。這是一套幫你優化重播數據、輕鬆突破 Rank 的輔助方案。<br>
+            支援 Stable 與 Lazer，讓你的點擊數據看起來更精準。
+        </p>
+        <div class="flex justify-center gap-4">
+            <button class="bg-osu-pink px-8 py-3 rounded-lg text-lg font-bold transition">立即獲取 v1.8.0</button>
+        </div>
+    </header>
+
+    <section id="safety" class="py-16 max-w-5xl mx-auto px-6">
+        <div class="bg-red-950/30 border border-red-900/50 p-8 rounded-2xl">
+            <h2 class="text-2xl font-bold text-red-400 mb-6"><i class="fas fa-exclamation-triangle mr-2"></i> 玩歸玩，帳號要保住</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-slate-300 text-sm leading-relaxed">
+                <ul class="space-y-4">
+                    <li><strong class="text-white">官服沒事別亂搞：</strong> 偵測系統非常強，去官服刷分基本上就是送死。</li>
+                    <li><strong class="text-white">私服量力而行：</strong> 刷出 500-700+ PP 很爽，但管理員跳出來要 Liveplay 你拿不出來就死定了。</li>
+                </ul>
+                <ul class="space-y-4">
+                    <li><strong class="text-white">絕對禁止盜用：</strong> 拿別人的 .osr 去跑，軌跡一模一樣絕對會封號。參考一下 Fia 的案例，重複提交數據就是自殺。</li>
+                    <li><strong class="text-white">觀察觀戰人數：</strong> 有人在看的時候，千萬別亂調 Offset。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-16 max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center mb-12">老司機帶路：最穩的操作流程</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-xl border-t-4 border-pink-500">
+                <h3 class="font-bold mb-3">1. 離線錄製</h3>
+                <p class="text-slate-400 text-sm">先斷網遊玩，按 F2 把最原始的重播檔存下來。</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-4 border-blue-500">
+                <h3 class="font-bold mb-3">2. 後製加工</h3>
+                <p class="text-slate-400 text-sm">關遊戲，用編輯器修一下滑鼠軌跡跟按鍵，加點隨機性進去。</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl border-t-4 border-green-500">
+                <h3 class="font-bold mb-3">3. 模擬提交</h3>
+                <p class="text-slate-400 text-sm">開啟機器人掛載遊戲。記得，Assist Games 導出的檔要先過 V3 編輯器轉存才能讀。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center">
+        <p class="text-slate-500 mb-6">推薦工具：<a href="https://github.com/thebetioplane/osuReplayEditorV3" class="underline hover:text-pink-400">ReplayEditorV3</a> | <a href="https://editor.assist.games" class="underline hover:text-pink-400">Assist Games</a></p>
+        <p class="text-xs text-slate-600">本工具僅供技術交流，如何使用請自行承擔後果。</p>
+    </section>
+
+</body>
+</html>
